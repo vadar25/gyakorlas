@@ -5,5 +5,5 @@ include "functions.php";
 
 /*then lets call our first function*/
 
-addvalues(10,10);
+addingvalues(10,10);
 ?>
