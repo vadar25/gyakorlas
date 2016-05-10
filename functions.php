@@ -2,7 +2,7 @@
 /*lets make our first function*/
 function addingvalues($x,$y) {
 	$z = $x + $y;
-	echo $y;
+	echo $z .;
 }
 
 ?>
