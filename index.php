@@ -1,7 +1,7 @@
 <?php 
 /*first we have to include our functions.php */
 
-include "function.php";
+include "functions.php";
 
 /*then lets call our first function*/
 
