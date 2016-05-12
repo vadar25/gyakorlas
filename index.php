@@ -67,7 +67,7 @@ echo $string;
 
 /*listing files*/
 /*opening the directory*/
-
+/*
 $directory = 'files';
 
 if ($handle = opendir($directory.'/')){
@@ -78,6 +78,29 @@ if ($handle = opendir($directory.'/')){
 		echo '<a href="'.$directory.'/'.$file.'">'.$file."</a><br>"; 
 	}
 }
+*/
+
+/*checking if file exists*/
+
+$filename = 'file.txt';
+
+if (file_exists($filename)){
+	echo 'The file is already exist.<br>';
+} else {
+	$handle = fopen($filename,'w');
+	fwrite($handle, 'Nothing');
+	fclose($handle);
+	
+	
+}
+
+
+
+
+
+
+
+
 
 
 ?>
