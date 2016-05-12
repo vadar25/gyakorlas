@@ -6,6 +6,10 @@ include "functions.php";
 /*then lets call our first function*/
 
 addingvalues(10,10);
-echo "</br>";
-echo get_browser(null,true); 
+echo "<br>";
+$file = fopen('test.txt','w');
+fwrite($file,"Ferenc" . "\n");
+fwrite($file,"Tamás");
+fclose($file);
+
 ?>
