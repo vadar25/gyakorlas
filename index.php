@@ -63,6 +63,5 @@ $string = implode(', ', $names_array);
 
 echo $string;
 
-tag version 1.1
 
 ?>
