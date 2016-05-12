@@ -1,14 +1,14 @@
 <?php 
 /*first we have to include our functions.php */
 
-include "functions.php";
+//include "functions.php";
 
 /*then lets call our first function*/
 
-addingvalues(10,10);
+// addingvalues(10,10);
 
 
-echo "<br>";
+// echo "<br>";
 
 /* writing to a file 
 $file = fopen('test.txt','w');
@@ -48,6 +48,13 @@ fclose($file);
 $filename = "test.txt";
 $file = fopen($filename,'r');
 
-echo fread($file, filesize($filename))
+$datain = fread($file, filesize($filename));
+
+$names_array = explode(',',$datain);
+
+foreach ($names_array as $name)
+	{
+		echo $name."<br>";
+	}
 
 ?>
