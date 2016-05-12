@@ -50,11 +50,19 @@ $file = fopen($filename,'r');
 
 $datain = fread($file, filesize($filename));
 
-$names_array = explode(',',$datain);
+/*$names_array = explode(',',$datain);
 
 foreach ($names_array as $name)
 	{
 		echo $name."<br>";
-	}
+	}*/
+	
+$names_array = array('Feri','Juli','Anya');
+
+$string = implode(', ', $names_array);
+
+echo $string;
+
+
 
 ?>
