@@ -63,6 +63,6 @@ $string = implode(', ', $names_array);
 
 echo $string;
 
-
+new1
 
 ?>
