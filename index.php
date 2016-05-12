@@ -63,8 +63,6 @@ $string = implode(', ', $names_array);
 
 echo $string;
 
-new1
-new2
-
+tag version 1.1
 
 ?>
