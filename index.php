@@ -19,7 +19,7 @@ fclose($file);
 
 
 /*read the file line by line and then echo them out with foreach*/
-
+/*
 $readin = file("test.txt");
 $readin_count = count($readin);
 $count = 1;
@@ -32,4 +32,14 @@ foreach ($readin as $names) {
 	}
 	$count++;
 }
+*/
+/*appending data */
+
+$file = fopen("test.txt","a");
+
+fwrite($file,"\n");
+fwrite($file,'Juli'."\n");
+fwrite($file,'Anya');
+
+fclose($file);
 ?>
