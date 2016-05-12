@@ -34,7 +34,7 @@ foreach ($readin as $names) {
 }
 */
 /*appending data */
-
+/*
 $file = fopen("test.txt","a");
 
 fwrite($file,"\n");
@@ -42,4 +42,12 @@ fwrite($file,'Juli'."\n");
 fwrite($file,'Anya');
 
 fclose($file);
+*/
+/*reading data from a file with comma separated variables*/
+
+$filename = "test.txt";
+$file = fopen($filename,'r');
+
+echo fread($file, filesize($filename))
+
 ?>
