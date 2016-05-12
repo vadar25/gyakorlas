@@ -44,25 +44,40 @@ fwrite($file,'Anya');
 fclose($file);
 */
 /*reading data from a file with comma separated variables*/
-
+/*
 $filename = "test.txt";
 $file = fopen($filename,'r');
 
 $datain = fread($file, filesize($filename));
-
+*/
 /*$names_array = explode(',',$datain);
 
 foreach ($names_array as $name)
 	{
 		echo $name."<br>";
 	}*/
-	
+	/*
 $names_array = array('Feri','Juli','Anya');
 
 $string = implode(', ', $names_array);
 
 echo $string;
 
+*/
+
+/*listing files*/
+/*opening the directory*/
+
+$directory = 'files';
+
+if ($handle = opendir($directory.'/')){
+	echo 'Looking inside '.$directory."<br>";
+	
+	while ($file = readdir($handle)){
+		if($file!='.'&&$file!='..')
+		echo '<a href="'.$directory.'/'.$file.'">'.$file."</a><br>"; 
+	}
+}
 
 
 ?>
